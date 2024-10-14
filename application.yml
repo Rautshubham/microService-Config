@@ -1,1 +1,11 @@
-
+eureka:
+  instance:
+    prefer-ip-address:  true
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 15
+  
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:2026/eureka
